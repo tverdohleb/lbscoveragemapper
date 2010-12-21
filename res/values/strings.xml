@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Coverage Mapper</string>
+    <string name="app_package">lbs.map</string>
+    <string name="provider_coarse_error">Can\'t access the Network location provider. Please ensure this location source is enabled in Settings, Location &amp; security, Use wireless networks.</string>
+    <string name="provider_fine_error">Can\'t access the GPS location provider. Please ensure this location source is enabled in Settings, Location &amp; security, Enable GPS satellites.</string>
+    <string name="provider_warning">We tried to use location provider !</string>
+    <string name="service_error_no_service">The phone is not connected to a wireless carrier</string>
+    <string name="service_error_phone_off">The phone is currently turned off or the phone is in Airplane Mode. Please turn it back on and try again.</string>
+    <string name="provider_coarse">COARSE</string>
+    <string name="provider_fine">FINE</string>
+    <string name="provider_network">network</string>
+    <string name="provider_gps">gps</string>
+    <string name="provider_disabled"><b><i>DISABLED</i></b></string>
+    <string name="provider_waiting">Waiting for signal...</string>
+    <string name="provider_out_of_service">Out of service!</string>
+    <string name="provider_temporarily_unavailable">Unavailable...</string>
+    <string name="unknown">Unknown</string>
+    <string name="tvlocation_coarse_fmt">&lt;b&gt;Network Location:&lt;/b&gt; %s</string>
+    <string name="tvlocation_fine_fmt">&lt;b&gt;GPS Location:&lt;/b&gt; %s</string>
+    <string name="tvcellinfo_fmt"></string>
+    <string name="operinfo_fmt"></string>
+    <string name="opernum_fmt"></string>
+    <string name="bearing_fmt"></string> 
+    <string name="distance_fmt_meters">&lt;b&gt;Distance:&lt;/b&gt; %d m</string>
+    <string name="distance_fmt_miles">&lt;b&gt;Distance:&lt;/b&gt; %.2f miles</string>
+    <string name="distance_fmt_feet">&lt;b&gt;Distance:&lt;/b&gt; %d ft</string>
+    <string name="signal_fmt"></string> 
+    <string name="ddm_fmt"></string>
+    <string name="ddms_fmt"></string>
+    <string name="dd_fmt">%s°</string>
+    <string name="min_fmt">00.000</string>
+    <string name="sec_fmt">00.00</string>
+    <string name="deg_fmt">00.00000</string>
+    <string name="bold_fmt">&lt;b&gt;%s&lt;/b&gt;</string>
+    <string name="italics_fmt">&lt;i&gt;%s&lt;/i&gt;</string>
+    <string name="service_state_poweroff">Phone is powered off.</string>
+    <string name="service_state_noservice">No service available.</string>
+    <string name="menu_title_settings">Settings</string>
+    <string name="menu_title_about">About</string>
+    <string name="saving_data"> (Saving data)</string>
+    <string name="datafile_datefmt">yyyyMMdd\'T\'HHmmss\'Z\'</string>
+    <string name="datafile_namefmt">cellfinder-%s.csv</string>
+    <string name="datafile_csv_datefmt">yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</string>
+
+    <string name="pref_title_auto_zoom">Auto Zoom</string>
+    <string name="pref_summary_auto_zoom_on">Set zoom level automatically</string>
+    <string name="pref_summary_auto_zoom_off">Set zoom level manually</string>
+
+    <string name="pref_title_satellite">Satellite</string>
+    <string name="pref_summary_satellite_on">Show satellite view</string>
+    <string name="pref_summary_satellite_off">Show map view</string>
+
+    <string name="pref_title_compass">Compass</string>
+    <string name="perf_summary_compass_on">Show compass</string>
+    <string name="perf_summary_compass_off">Hide compass</string>
+
+	<string name="pref_title_dist_unit">Distance Units</string>
+	<string name="pref_value_dist_unit_miles">Miles</string>
+	<string name="pref_value_dist_unit_feet">Feet</string>
+	<string name="pref_value_dist_unit_meters">Meters</string>
+
+	<string name="pref_title_coord_fmt">Coordinate Format</string>
+	<string name="pref_value_coord_fmt_dd">DD.ddddd</string>
+	<string name="pref_value_coord_fmt_ddm">DD MM.mmm</string>
+	<string name="pref_value_coord_fmt_ddms">DD MM SS.ss</string>
+	<string name="pref_value_coord_fmt_mgrs">MGRS</string>
+
+	<string name="pref_title_location_refresh">Location Refresh"</string>
+	<string name="pref_value_location_refresh_0">0 seconds</string>
+	<string name="pref_value_location_refresh_1">1 second</string>
+	<string name="pref_value_location_refresh_2">2 seconds</string>
+	<string name="pref_value_location_refresh_3">3 seconds</string>
+	<string name="pref_value_location_refresh_4">4 seconds</string>
+	<string name="pref_value_location_refresh_5">5 seconds</string>
+	<string name="pref_value_location_refresh_10">10 seconds</string>
+	<string name="pref_value_location_refresh_15">15 seconds</string>
+	<string name="pref_value_location_refresh_20">20 seconds</string>
+	<string name="pref_value_location_refresh_30">30 seconds</string>
+	<string name="pref_value_location_refresh_45">45 seconds</string>
+	<string name="pref_value_location_refresh_60">60 seconds</string>
+	<string name="pref_value_location_refresh_90">90 seconds</string>
+	<string name="pref_value_location_refresh_120">120 seconds</string>
+
+    <string name="pref_title_auto_center">Auto Center</string>
+    <string name="pref_center_option_gps">GPS</string>
+    <string name="pref_center_option_network">Network</string>
+    <string name="pref_center_option_midpoint">Midpoint</string>
+    <string name="pref_center_option_none">No auto centering</string>
+
+    <string name="pref_title_directquery">Direct query (experimental)</string>
+    <string name="pref_summary_directquery_on">Using direct cell locator</string>
+    <string name="pref_summary_directquery_off">Using default cell locator</string>
+
+    <string name="pref_title_savedata">Save data (experimental)</string>
+    <string name="pref_summary_savedata_on">Saving location data to SD card</string>
+    <string name="pref_summary_savedata_off">Not saving location data</string>
+    
+    <string name="pref_title_show_cell_data">Show cell data</string>
+    <string name="pref_summary_show_cell_data_on">Show cell data</string>
+    <string name="pref_summary_show_cell_data_off">Show map fullscreen</string>
+
+    <string name="about_title">About CellFinder</string>
+    <string name="about_title_fmt">CellFinder %s</string>
+    <string name="about_text">(c) 2008 Jon Larimer - jlarimer@gmail.com\n\n
+<b>CellFinder</b> is a tool to locate the cell tower your phone is currently connected to. It 
+requires access to the Network location services and works best with GPS access as well. These settings are 
+found in the <b>Security &amp; location</b> section of the <b>Settings</b> 
+menu. <b>Use wireless networks</b> must be enabled. <b>Enable GPS satellites</b> should be enabled
+for best results.\n\n
+For more information on <b>CellFinder</b>, see the Wiki at http://code.google.com/p/codetastrophe/wiki/CellFinder.
+	</string>
+</resources>

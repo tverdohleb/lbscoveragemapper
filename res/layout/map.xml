@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<com.google.android.maps.MapView
+		android:id="@+id/mapview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:clickable="true"
+		android:apiKey="0h5M-tguxK3s8vpyBgy6j6Li1RmKttvSiQl9szA" />
+		<!-- android:apiKey="0cibRvUq67cTDKOK4yIPVav0S7Ga0s8G2qtGbFw" work -->
+		<!-- android:apiKey="0cibRvUq67cTe3kEc1kknXqyPkpUFuRMbbsSF7w" home -->
+		
+	<LinearLayout 
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		
+		<TextView android:id="@+id/provider_name"
+             android:layout_width="fill_parent" android:layout_height="wrap_content"
+             android:lines="1"
+             android:text= "provider_name"
+             android:includeFontPadding="true" />
+
+		<TextView android:id="@+id/operator_name"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:lines="1" 
+			android:text= "operator_name"
+			android:includeFontPadding="true" />
+			
+		<TextView android:id="@+id/cell_cid"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:lines="1" 
+			android:text= "cell_cid"
+			android:includeFontPadding="true" />
+			
+		<TextView android:id="@+id/cell_lac"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:lines="1" 
+			android:text= "cell_lac"
+			android:includeFontPadding="true" />
+
+		<TextView android:id="@+id/signal_str"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:lines="1" 
+			android:text= "signal_str"
+			android:includeFontPadding="true" />
+			
+		<TextView android:id="@+id/cell_direction"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:lines="1" 
+			android:text= "cell_direction"
+			android:includeFontPadding="true" />
+
+	</LinearLayout>
+	
+		<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:layout_marginBottom="10dp">
+
+		<Button android:id="@+id/buttonStart"
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:layout_margin="10dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:padding="2dp"
+			android:text="Start" />
+		<Button android:id="@+id/buttonStop"
+			android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:layout_margin="10dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:padding="2dp"
+			android:text="Stop" />
+	</RelativeLayout>
+</RelativeLayout>

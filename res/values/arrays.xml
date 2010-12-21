@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="pref_auto_center_options">
+		<item>@string/pref_center_option_gps</item>
+		<item>@string/pref_center_option_network</item>
+		<item>@string/pref_center_option_midpoint</item>
+		<item>@string/pref_center_option_none</item>
+	</string-array>
+	<string-array name="pref_coord_fmt_options">
+		<item>@string/pref_value_coord_fmt_dd</item>
+		<item>@string/pref_value_coord_fmt_ddm</item>
+		<item>@string/pref_value_coord_fmt_ddms</item>
+		<item>@string/pref_value_coord_fmt_mgrs</item>
+	</string-array>
+	<string-array name="pref_dist_unit_options">
+		<item>@string/pref_value_dist_unit_miles</item>
+		<item>@string/pref_value_dist_unit_feet</item>
+		<item>@string/pref_value_dist_unit_meters</item>
+	</string-array>
+	<string-array name="prof_location_refresh_options">
+		<item>@string/pref_value_location_refresh_0</item>
+		<item>@string/pref_value_location_refresh_1</item>
+		<item>@string/pref_value_location_refresh_2</item>
+		<item>@string/pref_value_location_refresh_3</item>
+		<item>@string/pref_value_location_refresh_4</item>
+		<item>@string/pref_value_location_refresh_5</item>
+		<item>@string/pref_value_location_refresh_10</item>
+		<item>@string/pref_value_location_refresh_15</item>
+		<item>@string/pref_value_location_refresh_20</item>
+		<item>@string/pref_value_location_refresh_30</item>
+		<item>@string/pref_value_location_refresh_45</item>
+		<item>@string/pref_value_location_refresh_60</item>
+		<item>@string/pref_value_location_refresh_90</item>
+		<item>@string/pref_value_location_refresh_120</item>
+	</string-array>
+</resources>
