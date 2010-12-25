@@ -420,13 +420,13 @@ public class MyLocationListener implements LocationListener {
 
 			// handle zooming
 			if (mAutoZoom) {
-				// mc.zoomToSpan(latspan, lonspan);
+				 mc.zoomToSpan(latspan, lonspan);
 
 				// if we're using a centering option that isn't the midpoint, we
 				// have to
 				// zoom out one level to see both points
-				// if (mAutoCenter != AUTO_CENTER_MIDPOINT)
-				// mc.setZoom(mMapView.getZoomLevel() - 1);
+				 if (mAutoCenter != AUTO_CENTER_MIDPOINT)
+				 mc.setZoom(mMapView.getZoomLevel() - 1);
 			}
 
 			if (mAutoCenter == AUTO_CENTER_GPS) {

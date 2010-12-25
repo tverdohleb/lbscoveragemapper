@@ -3,6 +3,9 @@ package lbs.map;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -32,6 +35,8 @@ public class DataManagerService extends Service implements LocationListener {
 	private Double dLatitude, dLongitude;
 	private FileHelper mLogFile;
 	private Long lTime;
+	private NotificationManager mNotificationManager;
+	private int NOTIFICATION_ID;
 
 	@Override
 	public IBinder onBind(Intent intent) {
@@ -83,11 +88,22 @@ public class DataManagerService extends Service implements LocationListener {
 	@Override
 	public void onDestroy() {
 		Toast.makeText(this, "Coverage Mapper Service Stopped", Toast.LENGTH_LONG).show();
+		mNotificationManager.cancel(NOTIFICATION_ID);
 	}
 
 	@Override
 	public void onStart(Intent intent, int startid) {
 		Toast.makeText(this, "Coverage Mapper Service Started", Toast.LENGTH_LONG).show();
+		mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+		Notification note = new Notification(android.R.drawable.ic_menu_mylocation, 
+			    getResources().getString(R.string.app_name),
+			    System.currentTimeMillis());
+			note.flags |= Notification.FLAG_ONGOING_EVENT;
+			PendingIntent i = PendingIntent.getActivity(this, 0, 
+			    new Intent(this, MainActivity.class), 0);
+			note.setLatestEventInfo(this, getResources().getString(R.string.app_name), 
+			    "Coverage Mapper Service Started", i);
+			mNotificationManager.notify(NOTIFICATION_ID, note);
 	}
 
 	@Override
